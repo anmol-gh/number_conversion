@@ -1,7 +1,7 @@
 const Footer = () => {
 	return (
 		<div className='footer'>
-			Made with ❤️ by
+			Made with ❤️ by &nbsp;
 			<span>
 				<a
 					className='footer-link'

@@ -209,14 +209,16 @@ const Content = () => {
 			}
 		}
 	};
+
 	return (
 		<div className='content'>
 			<div className='content-container'>
 				<div className='content-containers'>
 					<label>Enter the number</label>
 					<input
+						className="input"
 						id='input'
-						placeholder='number'
+						placeholder='Number'
 						pattern='[0-1]'
 						type1='number'
 						number={number}
@@ -226,7 +228,7 @@ const Content = () => {
 				<div className='content-containers'>
 					<label> Convert From</label>
 					<select
-						className=''
+						className='select'
 						name='Representation'
 						id='Representation'
 						onChange={handletype1}
@@ -241,7 +243,7 @@ const Content = () => {
 				<div className='content-containers'>
 					<label> Convert to</label>
 					<select
-						className=''
+						className='select'
 						name='Representation2'
 						id='Representation2'
 						onChange={handletype2}
@@ -254,8 +256,12 @@ const Content = () => {
 					</select>
 				</div>
 				<div className='content-containers '>
-					<button onClick={handleClick}>Convert</button>{" "}
-					<label id='label'></label>
+					<button className='btn' onClick={handleClick}>
+						Convert
+					</button>{" "}
+					<div className='label'>
+						<label id='label'></label>
+					</div>
 				</div>
 			</div>
 		</div>
